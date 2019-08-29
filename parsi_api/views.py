@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Poets
@@ -55,3 +56,7 @@ class get_poem(APIView):
                 **poem
             ))
         return Response(poems)
+
+
+def github(request):
+    return HttpResponse("<a href=\"https://github.com/abiyat-parsi\">Source on github</a>")

@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^poets$', views.get_poets.as_view()),
     path(r'poem/<int:count>', views.get_poem.as_view()),
     url(r'^admin/', admin.site.urls),
+    url(r'.*', views.github),
 ]

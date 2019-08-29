@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+PERSISTENT_STORAGE_DATABASE = "/mnt/shared-volume"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -25,7 +26,11 @@ SECRET_KEY = 'bil@9y$k2wto%i2wei106f=d9)pl5+=_!b^0zu+co(z-usadrw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "parsi-api-beatbot.fandogh.cloud",
+    "api.parsi.tk",
+    "api.parsi.cf"
+]
 
 
 # Application definition
@@ -44,7 +49,8 @@ INSTALLED_APPS = [
 
 CORS_ORIGIN_WHITELIST = [
     "https://parsi.tk",
-    "https://abiyat-parsi.github.io"
+    "https://parsi.cf",
+    "https://abiyat-parsi.github.io",
 ]
 
 MIDDLEWARE = [
@@ -82,6 +88,7 @@ WSGI_APPLICATION = 'parsi.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
