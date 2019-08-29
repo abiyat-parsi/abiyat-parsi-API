@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://parsi.tk"
+    "https://parsi.tk",
+    "https://abiyat-parsi.github.io"
 ]
 
 MIDDLEWARE = [
