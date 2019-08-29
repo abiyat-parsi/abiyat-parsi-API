@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://127.0.0.1"
+    "https://parsi.tk"
 ]
 
 MIDDLEWARE = [
