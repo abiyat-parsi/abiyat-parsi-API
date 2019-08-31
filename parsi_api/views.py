@@ -61,5 +61,6 @@ class get_poem(APIView):
             ))
         return Response(poems)
 
-    def github(request):
-        return HttpResponse("<a href=\"https://github.com/abiyat-parsi\">Source on github</a>")
+
+def github(request):
+    return HttpResponse("<a href=\"https://github.com/abiyat-parsi\">Source on github</a>")
