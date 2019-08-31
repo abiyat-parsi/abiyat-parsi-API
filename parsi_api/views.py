@@ -40,6 +40,10 @@ class get_poets(APIView):
 class get_poem(APIView):
     def get(self, request, count):
         p_id = self.request.query_params.get('p') or 1
+
+        if int(count) > 10:
+            count = 10
+
         poems = []
         for _ in range(count):
             poem = requests.get(
@@ -57,6 +61,5 @@ class get_poem(APIView):
             ))
         return Response(poems)
 
-
-def github(request):
-    return HttpResponse("<a href=\"https://github.com/abiyat-parsi\">Source on github</a>")
+    def github(request):
+        return HttpResponse("<a href=\"https://github.com/abiyat-parsi\">Source on github</a>")
