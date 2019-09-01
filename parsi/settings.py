@@ -28,8 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "parsi-api-beatbot.fandogh.cloud",
-    "api.parsi.tk",
-    "api.parsi.cf"
+    "api.parsiverse.ir"
 ]
 
 
@@ -48,8 +47,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://parsi.tk",
-    "https://parsi.cf",
+    "https://parsiverse.ir",
     "https://abiyat-parsi.github.io",
 ]
 
