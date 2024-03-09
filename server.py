@@ -23,7 +23,7 @@ if __name__ == '__main__':
     django_app = get_wsgi_application()
 
     options = {
-        'bind': '127.0.0.1:80',
+        'bind': '127.0.0.1:3000',
         'workers': 4,
     }
     DjangoGunicornApp(django_app, options).run()
