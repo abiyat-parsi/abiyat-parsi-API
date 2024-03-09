@@ -27,8 +27,8 @@ SECRET_KEY = 'bil@9y$k2wto%i2wei106f=d9)pl5+=_!b^0zu+co(z-usadrw'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "parsi-api-beatbot.fandogh.cloud",
-    "api.parsiverse.ir"
+    "127.0.0.1",
+    "abiyat-parsi.github.io"
 ]
 
 
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://parsiverse.ir",
+    "http://127.0.0.1:9000",
     "https://abiyat-parsi.github.io",
 ]
 
